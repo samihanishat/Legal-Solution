@@ -28,6 +28,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'card-bg': '#F3F3F3',
             'btn-primary': '#B68C5A',
           }
         }
@@ -116,8 +117,8 @@
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
             some form, by injected humour.
           </p>
-          <button class="btn bg-white text-gray-400 w-96">Search your services</button>
-          <button class="btn bg-btn-primary text-white font-semibold">Search</button>
+          <input type="search" name="" id="" placeholder="Search your services" class="rounded-lg p-3 bg-white text-gray-400 w-96">
+          <button class="btn bg-btn-primary text-white font-semibold border-none">Search</button>
         </div>
       </div>
     </div>
@@ -304,13 +305,14 @@
     <!-- FAQ section -->
     <section class="space-y-8">
       <h2 class="text-5xl font-bold eb-garamond text-center">Frequently Asked Any Questions</h2>
-      <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+      <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+        suffered alteration in
         some form, by injected humour.</p>
       <div>
         <div class="hero">
           <div class="hero-content flex-col lg:flex-row-reverse p-12">
             <img src="images/faq (1).png" class=" rounded-lg flex-1" />
-            
+
             <div class="flex-1 space-y-8">
               <div class="collapse collapse-plus bg-base-200">
                 <input type="radio" name="my-accordion-3" checked="checked" />
@@ -344,12 +346,89 @@
                     alteration in some form, by injected humour, . </p>
                 </div>
               </div>
-            
+
+            </div>
           </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section class="space-y-8 mb-28">
+      <h2 class="text-5xl font-bold eb-garamond text-center">Contact With Us</h2>
+      <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+        suffered alteration in
+        some form, by injected humour.</p>
+      <div class="flex flex-col md:flex-row gap-10 md:gap-28">
+        <!-- card -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 flex-1">
+          <!-- card1 -->
+          <div class="card bg-card-bg rounded-none border-b border-gray-400">
+            <figure class="pt-10">
+              <img src="images/address.png" alt="address" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title eb-garamond font-bold">Address</h2>
+              <p>A108 Adam Street, <br>
+                New York, NY 535022</p>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="card bg-card-bg rounded-none border-l border-b border-gray-400">
+            <figure class="pt-10">
+              <img src="images/call.png" alt="address" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title eb-garamond font-bold">Call Us</h2>
+              <p>+88 01750 00 00 00 <br>
+                +88 01750 00 00 00</p>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="card bg-card-bg rounded-none border-gray-400">
+            <figure class="pt-10">
+              <img src="images/email.png" alt="address" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title eb-garamond font-bold">Email Us</h2>
+              <p>info@gmail.com <br>
+                info@gmail.com</p>
+            </div>
+          </div>
+          <!-- card4 -->
+          <div class="card bg-card-bg rounded-none border-l border-gray-400">
+            <figure class="pt-10">
+              <img src="images/time.png" alt="address" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title eb-garamond font-bold">Working Hours</h2>
+              <p>Mon-Fri: 9AM to 5PM <br>
+                Sunday: 9AM to 1 PM</p>
+            </div>
+          </div>
+        </div>
+        <!-- Input Form section -->
+        <div class="flex-1 space-y-8">
+          <label class="input flex items-center gap-2 bg-card-bg">
+            <input type="text" class="grow" placeholder="Your Name" />
+          </label>
+          <label class="input flex items-center gap-2 bg-card-bg">
+            <input type="text" class="grow" placeholder="Your Email" />
+          </label>
+          <label class="input flex items-center gap-2 bg-card-bg">
+            <input type="text" class="grow" placeholder="Subject" />
+          </label>
+          <!-- <label class="textara flex items-center gap-2 bg-card-bg"> -->
+            <textarea placeholder="Your Message" class="bg-card-bg textarea textarea-md w-full"></textarea>
+          <!-- </label> -->
+          <button class="btn flex items-center gap-2
+             bg-btn-primary text-white font-semibold w-full">Send Message
+          </button>
+
+
         </div>
       </div>
     </section>
   </main>
+  <!-- Footer section -->
 </body>
 
 </html>
